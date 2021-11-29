@@ -1,0 +1,19 @@
+.DS_Store
+
+.circleci
+.github
+
+.browserslistrc
+.editorconfig
+.eslintignore
+.eslintrc
+
+.gitignore
+.logs
+
+# NPM
+.npmignore
+.npmrc
+
+# NVM
+.nvmrc

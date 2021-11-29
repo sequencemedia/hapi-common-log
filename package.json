@@ -1,37 +1,61 @@
 {
-  "name": "hapi-common-log",
-  "version": "1.1.0",
-  "description": "Parses the hapi request object to create a common log format log line",
-  "main": "index.js",
-  "scripts": {
-    "test": "lab -vC"
-  },
+  "name": "@sequencemedia/hapi-common-log",
+  "version": "1.0.0",
+  "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
-    "hapijs",
     "common",
     "log",
     "format",
     "common log format"
   ],
+  "type": "module",
+  "main": "./index.mjs",
   "author": "Raquel Vélez <raquel@rckbt.me>",
+  "contributors": [
+    "Jonathan Perry <sequencemedia@sequencemedia.com> (Sequence Media Limited)"
+  ],
   "license": "ISC",
-  "dependencies": {
-    "moment-tokens": "^1.0.0"
-  },
-  "devDependencies": {
-    "hapi": "^6.4.0",
-    "lab": "^4.0.0"
-  },
-  "directories": {
-    "test": "test"
+  "engines": {
+    "node": ">=16.13.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rockbot/hapi-common-log.git"
+    "url": "git@github.com:sequencemedia/hapi-common-log.git"
   },
-  "bugs": {
-    "url": "https://github.com/rockbot/hapi-common-log/issues"
+  "scripts": {
+    "lint": "eslint . --ext .mjs --ext .cjs",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "cross-env NODE_ENV=test mocha test",
+    "gulp": "gulp --color",
+    "pre-commit": "npm run lint && npm run test && npm run gulp -- pre-commit"
   },
-  "homepage": "https://github.com/rockbot/hapi-common-log"
+  "dependencies": {
+    "debug": "^4.3.3",
+    "moment": "^2.29.1",
+    "moment-strftime": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.4",
+    "chai": "^4.3.4",
+    "core-js": "^3.19.1",
+    "cross-env": "^7.0.3",
+    "eslint": "7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "gulp": "^4.0.2",
+    "husky": "^7.0.4",
+    "mocha": "^9.1.3",
+    "sinon": "^12.0.1"
+  },
+  "imports": {
+    "#hapi-common-log": "./src/index.mjs",
+    "#hapi-common-log/build/gulp": "./build/gulp/index.mjs"
+  }
 }
