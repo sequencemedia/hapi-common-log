@@ -13,9 +13,8 @@ function env () {
 const presets = [
   [
     '@babel/env', {
-      useBuiltIns: 'usage',
       targets: {
-        node: '16.13.0',
+        node: 'current',
         browsers: [
           'last 4 versions',
           'safari >= 9',
@@ -24,6 +23,7 @@ const presets = [
           '> 2%'
         ]
       },
+      useBuiltIns: 'usage',
       corejs: 3
     }
   ]
