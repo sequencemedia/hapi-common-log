@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/hapi-common-log",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
@@ -46,7 +46,7 @@
     "eslint": "7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-mocha": "^10.0.2",
+    "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "gulp": "^4.0.2",
