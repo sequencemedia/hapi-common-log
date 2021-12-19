@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/hapi-common-log",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
@@ -9,8 +9,8 @@
     "format",
     "common log format"
   ],
-  "type": "module",
   "main": "./index.mjs",
+  "type": "module",
   "author": "Raquel Vélez <raquel@rckbt.me>",
   "contributors": [
     "Jonathan Perry <sequencemedia@sequencemedia.com> (Sequence Media Limited)"
@@ -48,7 +48,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
     "husky": "^7.0.4",
     "mocha": "^9.1.3",
