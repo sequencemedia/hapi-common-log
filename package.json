@@ -28,7 +28,9 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test mocha test",
     "gulp": "gulp --color",
-    "pre-commit": "npm run lint && npm run test && npm run gulp -- pre-commit"
+    "pre-commit": "npm run lint && npm run test",
+    "post-commit": "npm run gulp -- post-commit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "debug": "^4.3.3",
@@ -40,6 +42,7 @@
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
+    "@sequencemedia/hooks": "^1.0.1",
     "chai": "^4.3.4",
     "core-js": "^3.20.1",
     "cross-env": "^7.0.3",
@@ -55,7 +58,6 @@
     "sinon": "^12.0.1"
   },
   "imports": {
-    "#hapi-common-log": "./src/index.mjs",
-    "#hapi-common-log/build/gulp": "./build/gulp/index.mjs"
+    "#hapi-common-log": "./src/index.mjs"
   }
 }

@@ -1,9 +1,11 @@
 import gulp from 'gulp'
 
-import preCommit from '#hapi-common-log/build/gulp'
+import {
+  postCommit
+} from '@sequencemedia/hooks'
 
 gulp
-  .task('pre-commit', preCommit)
+  .task('post-commit', postCommit)
 
 gulp
-  .task('default', gulp.series('pre-commit'))
+  .task('default', gulp.series('post-commit'))
