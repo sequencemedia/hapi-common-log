@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/hapi-common-log",
-  "version": "1.0.111",
+  "version": "1.0.112",
   "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
