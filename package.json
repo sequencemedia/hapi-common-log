@@ -42,20 +42,20 @@
     "@babel/core": "^7.17.10",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.17.10",
-    "@sequencemedia/hooks": "^1.0.102",
+    "@sequencemedia/hooks": "^1.0.111",
     "chai": "^4.3.6",
-    "core-js": "^3.22.4",
+    "core-js": "^3.22.5",
     "cross-env": "^7.0.3",
-    "eslint": "^8.14.0",
+    "eslint": "^8.15.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-mocha": "^10.0.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "mocha": "^10.0.0",
-    "sinon": "^13.0.2"
+    "sinon": "^14.0.0"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
