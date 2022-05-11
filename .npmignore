@@ -1,15 +1,17 @@
 .DS_Store
 
 .circleci
-.github
+.husky
 
 .browserslistrc
+
 .editorconfig
+
 .eslintignore
 .eslintrc
 
+.github
 .gitignore
-.logs
 
 # NPM
 .npmignore
@@ -17,3 +19,6 @@
 
 # NVM
 .nvmrc
+
+# Deps
+.depsrc
