@@ -42,9 +42,9 @@
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
-    "@sequencemedia/hooks": "^1.0.232",
+    "@sequencemedia/hooks": "^1.0.233",
     "chai": "^4.3.6",
-    "core-js": "^3.25.4",
+    "core-js": "^3.25.5",
     "cross-env": "^7.0.3",
     "eslint": "^8.24.0",
     "eslint-config-standard": "^17.0.0",
@@ -55,7 +55,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.1",
     "mocha": "^10.0.0",
-    "sinon": "^14.0.0"
+    "sinon": "^14.0.1"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
