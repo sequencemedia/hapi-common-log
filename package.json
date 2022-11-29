@@ -55,7 +55,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.2",
     "mocha": "^10.1.0",
-    "sinon": "^14.0.2"
+    "sinon": "^15.0.0"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
