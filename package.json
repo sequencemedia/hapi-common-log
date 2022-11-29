@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
     "@sequencemedia/hooks": "^1.0.274",
@@ -55,7 +55,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.2",
     "mocha": "^10.1.0",
-    "sinon": "^14.0.2"
+    "sinon": "^15.0.0"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
