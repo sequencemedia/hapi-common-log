@@ -6,29 +6,47 @@ const log = debug('@sequencemedia/hapi-common-log')
 
 log('`@sequencemedia/hapi-common-log` is awake')
 
-export const hasRawReqClientNPNProtocol = ({ raw: { req: { client = {} } = {} } = {} } = {}) => Reflect.has(client, 'npnProtocol')
-export const getRawReqClientNPNProtocol = ({ raw: { req: { client = {} } = {} } = {} } = {}) => Reflect.get(client, 'npnProtocol')
+const getRaw = ({ raw = {} } = {}) => raw
 
-export const hasRawReqHttpVersion = ({ raw: { req = {} } = {} } = {}) => Reflect.has(req, 'httpVersion')
-export const getRawReqHttpVersion = ({ raw: { req = {} } = {} } = {}) => Reflect.get(req, 'httpVersion')
+const getReq = ({ req = {} } = {}) => req
 
-export const hasResponseStatusCode = ({ response = {} } = {}) => Reflect.has(response, 'statusCode')
-export const getResponseStatusCode = ({ response = {} } = {}) => Reflect.get(response, 'statusCode')
+const getClient = ({ client = {} } = {}) => client
 
-export const hasResponseId = ({ response = {} } = {}) => Reflect.has(response, 'id')
-export const getResponseId = ({ response = {} } = {}) => Reflect.get(response, 'id')
+const getHeaders = ({ headers = {} } = {}) => headers
 
-export const hasResponseHeadersContentLength = ({ response: { headers = {} } = {} } = {}) => Reflect.has(headers, 'content-length')
-export const getResponseHeadersContentLength = ({ response: { headers = {} } = {} } = {}) => Reflect.get(headers, 'content-length')
+const getInfo = ({ info = {} } = {}) => info
 
-export const hasInfoRemoteAddress = ({ info = {} } = {}) => Reflect.has(info, 'remoteAddress')
-export const getInfoRemoteAddress = ({ info = {} } = {}) => Reflect.get(info, 'remoteAddress')
+const getRawReq = (request) => getReq(getRaw(request))
 
-export const hasRawReqMethod = ({ raw: { req = {} } = {} } = {}) => Reflect.has(req, 'method')
-export const getRawReqMethod = ({ raw: { req = {} } = {} } = {}) => Reflect.get(req, 'method')
+const getRawReqClient = (request) => getClient(getRawReq(request))
 
-export const hasRawReqUrl = ({ raw: { req = {} } = {} } = {}) => Reflect.has(req, 'url')
-export const getRawReqUrl = ({ raw: { req = {} } = {} } = {}) => Reflect.get(req, 'url')
+const getResponseHeaders = (request) => getHeaders(getResponse(request))
+
+const getResponse = ({ response = {} } = {}) => response
+
+export const hasRawReqClientNPNProtocol = (request) => Reflect.has(getRawReqClient(request), 'npnProtocol')
+export const getRawReqClientNPNProtocol = (request) => Reflect.get(getRawReqClient(request), 'npnProtocol')
+
+export const hasRawReqHttpVersion = (request) => Reflect.has(getRawReq(request), 'httpVersion')
+export const getRawReqHttpVersion = (request) => Reflect.get(getRawReq(request), 'httpVersion')
+
+export const hasResponseStatusCode = (request) => Reflect.has(getResponse(request), 'statusCode')
+export const getResponseStatusCode = (request) => Reflect.get(getResponse(request), 'statusCode')
+
+export const hasResponseId = (request) => Reflect.has(getResponse(request), 'id')
+export const getResponseId = (request) => Reflect.get(getResponse(request), 'id')
+
+export const hasResponseHeadersContentLength = (request) => Reflect.has(getResponseHeaders(request), 'content-length')
+export const getResponseHeadersContentLength = (request) => Reflect.get(getResponseHeaders(request), 'content-length')
+
+export const hasInfoRemoteAddress = (request) => Reflect.has(getInfo(request), 'remoteAddress')
+export const getInfoRemoteAddress = (request) => Reflect.get(getInfo(request), 'remoteAddress')
+
+export const hasRawReqMethod = (request) => Reflect.has(getRawReq(request), 'method')
+export const getRawReqMethod = (request) => Reflect.get(getRawReq(request), 'method')
+
+export const hasRawReqUrl = (request) => Reflect.has(getRawReq(request), 'url')
+export const getRawReqUrl = (request) => Reflect.get(getRawReq(request), 'url')
 
 export const hasProtocol = (request) => (hasRawReqClientNPNProtocol(request) || hasRawReqHttpVersion(request))
 
