@@ -6,6 +6,8 @@ const log = debug('@sequencemedia/hapi-common-log')
 
 log('`@sequencemedia/hapi-common-log` is awake')
 
+const DEFAULT = '-'
+
 const getRaw = ({ raw = {} } = {}) => raw
 
 const getReq = ({ req = {} } = {}) => req
@@ -90,9 +92,9 @@ export function getRequestLine (request) {
    *  log('getRequestLine')
    */
 
-  const method = hasRawReqMethod(request) ? getRawReqMethod(request) : '-'
-  const url = hasRawReqUrl(request) ? getRawReqUrl(request) : '-'
-  const protocol = hasProtocol(request) ? getProtocol(request) : '-'
+  const method = hasRawReqMethod(request) ? getRawReqMethod(request) : DEFAULT
+  const url = hasRawReqUrl(request) ? getRawReqUrl(request) : DEFAULT
+  const protocol = hasProtocol(request) ? getProtocol(request) : DEFAULT
 
   return `${method} ${url} ${protocol}`
 }
@@ -102,13 +104,13 @@ export default function toCommonLog (request) {
    *  log('toCommonLog')
    */
 
-  const remoteHost = hasInfoRemoteAddress(request) ? getInfoRemoteAddress(request) : '-'
-  const userIdentifier = '-'
-  const userId = hasResponseId(request) ? getResponseId(request) : '-'
+  const remoteHost = hasInfoRemoteAddress(request) ? getInfoRemoteAddress(request) : DEFAULT
+  const userIdentifier = DEFAULT
+  const userId = hasResponseId(request) ? getResponseId(request) : DEFAULT
   const stringFromTime = getStringFromTime()
   const requestLine = getRequestLine(request)
-  const responseStatusCode = hasResponseStatusCode(request) ? getResponseStatusCode(request) : '-'
-  const responseObjectSize = hasResponseHeadersContentLength(request) ? getResponseHeadersContentLength(request) : '-'
+  const responseStatusCode = hasResponseStatusCode(request) ? getResponseStatusCode(request) : DEFAULT
+  const responseObjectSize = hasResponseHeadersContentLength(request) ? getResponseHeadersContentLength(request) : DEFAULT
 
   return `${remoteHost} ${userIdentifier} ${userId} [${stringFromTime}] "${requestLine}" ${responseStatusCode} ${responseObjectSize}`
 }

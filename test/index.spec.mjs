@@ -1,12 +1,12 @@
 import debug from 'debug'
 
-import sinon from 'sinon'
-
-import moment from 'moment-strftime'
-
 import {
   expect
 } from 'chai'
+
+import sinon from 'sinon'
+
+import moment from 'moment-strftime'
 
 import toCommonLog, {
   hasRawReqClientNPNProtocol,
