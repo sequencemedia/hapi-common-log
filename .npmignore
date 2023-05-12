@@ -1,6 +1,7 @@
 .DS_Store
 
 .circleci
+.github
 .husky
 
 .browserslistrc
@@ -9,9 +10,6 @@
 
 .eslintignore
 .eslintrc
-
-.github
-.gitignore
 
 # NPM
 .npmignore
@@ -23,4 +21,6 @@
 # Deps
 .depsrc
 
-gulpfile.*
+# Git
+.gitattributes
+.gitignore

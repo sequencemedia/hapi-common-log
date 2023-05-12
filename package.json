@@ -9,7 +9,7 @@
     "format",
     "common log format"
   ],
-  "main": "./index.mjs",
+  "main": "./src/index.mjs",
   "type": "module",
   "author": "Raquel Vélez <raquel@rckbt.me>",
   "contributors": [
