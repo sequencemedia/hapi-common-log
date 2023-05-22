@@ -43,7 +43,7 @@
     "chai": "^4.3.7",
     "core-js": "^3.30.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-mocha": "^10.1.0",
@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
-    "sinon": "^15.0.4"
+    "sinon": "^15.1.0"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
