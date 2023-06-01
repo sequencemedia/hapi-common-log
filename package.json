@@ -11,13 +11,13 @@
   ],
   "main": "./src/index.mjs",
   "type": "module",
-  "author": "Raquel Vélez <raquel@rckbt.me>",
+  "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "contributors": [
-    "Jonathan Perry <sequencemedia@sequencemedia.com> (Sequence Media Limited)"
+    "Raquel Vélez <raquel@rckbt.me>"
   ],
   "license": "ISC",
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=18.5.0"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha test",
+    "test": "cross-env NODE_ENV=test mocha test --recursive",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -35,7 +35,6 @@
     "moment-strftime": "^0.5.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/preset-env": "^7.22.4",

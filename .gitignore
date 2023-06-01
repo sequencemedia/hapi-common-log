@@ -13,6 +13,3 @@ node_modules
 
 # User-defined Deps configuration
 .depsrc
-
-# Logs
-.logs/*.log

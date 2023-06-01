@@ -4,10 +4,7 @@
 .github
 .husky
 
-.browserslistrc
-
 .editorconfig
-
 .eslintignore
 .eslintrc
 
