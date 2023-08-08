@@ -11,7 +11,11 @@
   ],
   "main": "./src/index.mjs",
   "type": "module",
-  "author": "Jonathan Perry for Sequence Media Limited <sequencemedia@sequencemedia.net>",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "http://sequencemedia.net"
+  },
   "contributors": [
     "Raquel Vélez <raquel@rckbt.me>"
   ],
@@ -35,9 +39,9 @@
     "moment-strftime": "^0.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/eslint-parser": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
+    "@babel/core": "^7.22.10",
+    "@babel/eslint-parser": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
     "@sequencemedia/hooks": "^1.0.444",
     "chai": "4.3.7",
     "core-js": "^3.32.0",
