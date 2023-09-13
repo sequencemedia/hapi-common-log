@@ -50,7 +50,7 @@
     "eslint-config-standard": "^17.1.0",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
-    "sinon": "^15.2.0"
+    "sinon": "^16.0.0"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
