@@ -42,7 +42,7 @@
     "@babel/core": "^7.23.7",
     "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-env": "^7.23.8",
-    "@sequencemedia/hooks": "^1.0.472",
+    "@sequencemedia/hooks": "^1.0.473",
     "chai": "^5.0.0",
     "core-js": "^3.35.1",
     "cross-env": "^7.0.3",
