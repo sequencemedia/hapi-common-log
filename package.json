@@ -30,8 +30,8 @@
   "scripts": {
     "lint": "eslint . --ext .mjs,.cjs",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha test --recursive",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "cross-env NODE_ENV=test mocha test --recursive"
   },
   "dependencies": {
     "debug": "^4.3.4",
@@ -42,7 +42,7 @@
     "@babel/core": "^7.24.6",
     "@babel/eslint-parser": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
-    "@sequencemedia/hooks": "^1.0.491",
+    "@sequencemedia/hooks": "^1.0.492",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
