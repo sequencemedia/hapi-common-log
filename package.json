@@ -28,7 +28,7 @@
     "url": "git@github.com:sequencemedia/hapi-common-log.git"
   },
   "scripts": {
-    "lint": "eslint . --ext .mjs,.cjs",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky",
     "test": "cross-env NODE_ENV=test mocha test --recursive"
@@ -42,12 +42,13 @@
     "@babel/core": "^7.24.7",
     "@babel/eslint-parser": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
+    "@sequencemedia/eslint-config-standard": "^0.0.5",
     "@sequencemedia/hooks": "^1.0.497",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
-    "eslint": "8.57.0",
-    "eslint-config-standard": "^17.1.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
     "husky": "^9.0.11",
     "mocha": "^10.6.0",
     "sinon": "^18.0.0"
