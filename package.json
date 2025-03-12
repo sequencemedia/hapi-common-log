@@ -39,8 +39,8 @@
     "moment-strftime": "^0.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.9",
-    "@babel/eslint-parser": "^7.26.8",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
     "@sequencemedia/eslint-config-standard": "^0.2.42",
     "chai": "^5.2.0",
